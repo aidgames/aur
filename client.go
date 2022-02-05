@@ -22,7 +22,7 @@ func (r *PayloadError) Error() string {
 	return fmt.Sprintf("status %d: %s", r.StatusCode, r.ErrorField)
 }
 
-const _defaultURL = "https://aur.archlinux.org/rpc.php?"
+const _defaultURL = "https://aur.archlinux.org/rpc?"
 
 // ClientInterface specification for the AUR client.
 type ClientInterface interface {
