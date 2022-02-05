@@ -78,8 +78,8 @@ func NewClient(opts ...ClientOption) (*Client, error) {
 		client.HTTPClient = http.DefaultClient
 	}
 
-	// ensure base URL has /rpc.php?
-	if !strings.HasSuffix(client.BaseURL, "rpc.php?") {
+	// ensure base URL has /rpc?
+	if !strings.HasSuffix(client.BaseURL, "rpc?") {
 		// ensure the server URL always has a trailing slash
 		if !strings.HasSuffix(client.BaseURL, "/") {
 			client.BaseURL += "/"
