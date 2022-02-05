@@ -85,7 +85,7 @@ func NewClient(opts ...ClientOption) (*Client, error) {
 			client.BaseURL += "/"
 		}
 
-		client.BaseURL += "rpc.php?"
+		client.BaseURL += "rpc?"
 	}
 
 	return &client, nil
